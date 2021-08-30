@@ -1,3 +1,7 @@
+* @author Alejandro Restrepo - Vladimir Ortega
+ *Universidad de Antioquia - Técnicas de programación2021
+ */
+
 //Numeral 1
 
 def es_primo(num1 : Int) : Boolean = {

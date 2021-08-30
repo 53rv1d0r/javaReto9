@@ -1,0 +1,78 @@
+//Numeral 1
+
+def es_primo(num1 : Int) : Boolean = {
+    val num2  = 2
+  
+    if ( num2>= num1){
+        println("Es primo")
+        return true
+     }else-if (num1 % num2 != 0) {
+       return es_primo(num1, num2 + 1)
+        }
+       else{
+         println("No es primo", num2, "es divisor")
+         return false
+                 }
+  }
+
+
+//Numeral 2
+def recursiva(num1 : BigInt): BigInt = {
+  var num1 : Int = 4
+        if(num1 <= 1)
+            return 1
+        else{
+           
+           
+            num1%10+recursiva(num1/10)   
+            
+        }
+
+}
+
+//Numeral 3
+println ("Funcion map"+" "+ "La función map  convierte una colección "+
+"A en otra B aplicando una función a cada elemento en A."+" "+ 
+"Consiste en que puedes llamar a la función en su colección, pasarle una función o una función anónima y transformar cada elemento de la colección."+" "+ 
+"Es de Orden Superior porque implica guardar informacion de una funcion en desarrollo para luego traer sus resultados sobre la funciona Actual")
+
+
+//Numeral 4
+
+//Numeral 4.a)
+def factorial (num1: BigInt) : BigInt = {
+  if (num1 < 1 )
+        1
+  else 
+      num1 * factorial (num1 - 1 )
+}
+
+//Numeral 4.b)
+def cubo (num1 : BigInt) : BigInt = {
+  if (num1 < 1 )
+        1
+  else 
+      num1  * num1  * num1 
+}
+
+//Numeral 4.c) y d)
+import fiddle.Fiddle, Fiddle.println
+import scalajs.js
+
+@js.annotation.JSExportTopLevel("ScalaFiddle")
+object ScalaFiddle {
+  // $FiddleStart
+  def ordenSuperior(num1:Int,num2:Int => Int): Unit = {
+          var sum:Int = 0
+          var x: Int=0
+          if (x<=num1){
+              sum=sum++
+           
+              
+          }
+          return ordenSuperior
+          
+      }
+val funcionOtras = ordenSuperior (10,cubo )
+println (funcionOtras)
+}

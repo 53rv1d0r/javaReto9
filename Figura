@@ -1,12 +1,26 @@
-class esfera (var radio : Double ) extends Figura{
-def area () = Math.PI *radio * radio
+import fiddle.Fiddle, Fiddle.println
+import scalajs.js
+
+@js.annotation.JSExportTopLevel("ScalaFiddle")
+object ScalaFiddle {
+  // $FiddleStart
+  trait Figura{
+      def area(c:Int):Int
+      def area2(d:Int):Int
+  }
+  
+  
+  class esfera (var radio : Double ) extends Figura{
+  def area () = Math.PI *radio * radio
+  }
+  val c = new Circulo (5)
+  println (c.area())
+  
+  
+  class cubo (var area1 : Double ) extends Figura{
+  def area2 () = area1 * area1
+  }
+  
+  println (area2())
+  // $FiddleEnd
 }
-val c = new Circulo (5)
-println (c.area())
-
-
-class cubo (var area1 : Double ) extends Figura{
-def area2 () = area1 * area1
-}
-
-println (area2())

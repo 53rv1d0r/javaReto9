@@ -1,0 +1,4 @@
+trait Figura{
+    def area(c:Int):Int
+    def area2(d:Int):Int
+}

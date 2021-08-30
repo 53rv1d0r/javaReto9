@@ -1,0 +1,12 @@
+class esfera (var radio : Double ) extends Figura{
+def area () = Math.PI *radio * radio
+}
+val c = new Circulo (5)
+println (c.area())
+
+
+class cubo (var area1 : Double ) extends Figura{
+def area2 () = area1 * area1
+}
+
+println (area2())
